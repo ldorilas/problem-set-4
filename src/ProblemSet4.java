@@ -17,10 +17,38 @@
  * This problem set contains 10 exercises worth 50 points. It is due no later than
  * 11:59pm on Sunday, November 4, 2018. Good luck! 
  */
-
+import java.util.Scanner;
 public class ProblemSet4 {
 	
+	private static Scanner input = new Scanner(System.in);
 	public static void main(String[] args) {
+		ProblemSet4 pset4 = new ProblemSet4();
+		//exercise 1
+		System.out.println("Enter outer string: ");
+		String out = input.nextLine();
+		System.out.println("Enter inner string: ");
+		String in = input.nextLine();
+		pset4.surroundMe(out, in);
+	}
+	
+	public void surroundMe(String out, String in) {
+		int length1 = out.length();
+		int length2 = in.length();
+		if ((length1 != 4) || (length2 != 3)) {
+			System.out.println("null");
+		}
+		else if ((length1 == 4) && (length2 == 3)) {
+			
+		}
+		if ((out == "null") || (in == "null")) {
+			System.out.println("null");
+		}
+		if (out == in) {
+			System.out.println("null");
+		}
+	}
+	
+	public void endsMeet(String str, int n) {
 		
 	}
 }
